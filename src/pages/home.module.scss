@@ -1,12 +1,12 @@
-.postsList {
-  margin: 0 auto;
-  padding: 0 2rem;
+.posts {
+  margin-top: 2rem;
+
   > a {
     display: block;
-  }
 
-  a + a {
-    margin-top: 2rem;
+    & + a {
+      margin-top: 3rem;
+    }
   }
   button {
     border: none;
@@ -15,54 +15,51 @@
     font-size: 1.125rem;
     color: var(--highlight);
     margin-top: 4rem;
-    transition: color 0.2s;
+    transition: filter 0.2s;
+
     &:hover {
       filter: brightness(0.8);
     }
   }
 }
 
-.postContent {
-  margin: 5rem auto 0;
-
+.post {
   strong {
-
     font-size: 1.75rem;
     font-weight: 700;
     color: var(--heading);
     transition: color 0.2s;
-    &:hover  {
-      color: var(--highlight);
-    }
   }
-  p{
+  &:hover strong {
+    color: var(--highlight);
+  }
+
+  p {
+    margin-top: 0.5rem;
     font-size: 1.125rem;
-    margin-top: 0.25rem;
+    color: var(--body);
   }
-  .postInfoContent {
-    max-width: 263px;
-    height: 20px;
-    margin: 1rem 0 2.5rem 0;
-    font-size: 0.87rem;
-    color: var(--info);
+
+  ul {
+    list-style: none;
+    margin-top: 1.5rem;
     display: flex;
-    justify-content: space-between;
-    time{
+
+    li {
+      font-size: 0.875rem;
+      color: var(--info);
       display: flex;
       align-items: center;
-      justify-content: center;
+
       svg {
-        margin-right: 0.25rem;
+        height: 20px;
+        width: 20px;
+        margin-right: 0.5rem;
       }
-    }
-    span {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      svg {
-        margin-right: 0.25rem;
+
+      & + li {
+        margin-left: 1.625rem;
       }
     }
   }
 }
-
