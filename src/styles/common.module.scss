@@ -2,3 +2,23 @@
   max-width: 700px;
   margin: 4rem auto;
 }
+
+.exitPreview {
+  border-radius: 4px;
+  background: var(--heading);
+  font-weight: 600;
+  text-align: center;
+  margin: 5rem 0;
+  color: var(--background);
+  transition: 0.2s;
+  &:hover {
+    filter: brightness(0.8);
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    padding: 1.125rem 0;
+    font-size: 1.125rem;
+  }
+}

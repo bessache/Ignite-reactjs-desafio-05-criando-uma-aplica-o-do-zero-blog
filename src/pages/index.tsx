@@ -5,6 +5,7 @@ import { FiCalendar, FiUser } from 'react-icons/fi';
 import { format, parseISO } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import { useState } from 'react';
+import Head from 'next/head';
 import Header from '../components/Header';
 
 import { getPrismicClient } from '../services/prismic';
@@ -66,6 +67,9 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
 
   return (
     <>
+      <Head>
+        <title>Home | SpaceTraveling</title>
+      </Head>
       <main className={commonStyles.container}>
         <Header />
         <div className={styles.posts}>
