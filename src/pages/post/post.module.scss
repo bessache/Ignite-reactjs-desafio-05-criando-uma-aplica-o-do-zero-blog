@@ -6,7 +6,7 @@
 
 .post {
   max-width: 720px;
-  margin: 5rem auto 0;
+  margin: 5rem auto ;
   h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -56,6 +56,12 @@
     }
   }
 }
+.editedDatePost {
+  color: var(--info);
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-top: 1.125rem;
+}
 .postContent {
   margin-top: 4.125rem;
   display: flex;
@@ -92,3 +98,42 @@
   }
 
 }
+.navigateTool {
+  width: 100%;
+  position: relative;
+  font-size: 1.125rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--body);
+  margin-top: 3.75rem;
+
+  span {
+    color: var(--heading);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+
+  a{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+  }
+}
+.previous {
+  position: absolute;
+  left: 0;
+  span {
+    margin-top: 0.5rem;
+  }
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  span {
+    margin-top: 0.5rem;
+  }
+}
+
+
